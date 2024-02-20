@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+:root {
+    --cafe-bg : #44321f;
+    --verdeOscuro-bg:#175228;
+    --verdeClaro-bg:#69D387;
+    --paloRosa-letra:#e8dbd7;
+}
+/* Estilo de textos */
+/* h1,h2 */
+.principal{
+    font-family: "Open Sans Hebrew Extra Bold";
+    font-size: 33px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+    word-spacing: 7px; 
+}
+/* h3,h4,h5 */
+.secundario{
+    font-family: "Open Sans Hebrew Light";
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    word-spacing: 7px;
+}
+/* h6 */
+.enfasis{
+    font-family: "Open Sans Hebrew Bold";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+    word-spacing: 9px;
+}
+/* p,li,a , etc */
+.texto{
+    font-family: "Open Sans Hebrew Light";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    word-spacing: 3px;
+}
+.texto-bold{
+    font-family: "Open Sans Hebrew Extra Bold";
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.separador-out{
+    border-right: 2px solid var(--paloRosa-letra);
+    padding: 0.5rem;
+}
+.separador-in{
+    padding-right: 0.3rem;
+}
+/* Fin de estilos globales */
+
+/*Header*/
+header{
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--cafe-bg);
+    background: linear-gradient(180deg, #44321f 20%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    justify-content: end;
+    padding: 1.5rem;
+    
+}
+header > nav {
+    display: flex;
+    gap: 1.5rem;
+}
+header > nav > a {
+    color: var(--paloRosa-letra) ;
+    
+}
+
+
+/*Footer*/
+footer {
+    background-image: url(../img/Banner\ footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 30vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+footer img {
+    height: 40vh;
+    
+}
+
+/*Main*/
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+
+.main-nav{
+    background-color: var(--cafe-bg);
+    background-position: right;
+    background-size: auto;
+    padding: 1rem;
+    color: var(--paloRosa-letra);
+
+}
+.main-nav>a{
+    color: var(--paloRosa-letra);
+    
+}
+
+.main-sections{
+    padding: 7rem;
+    background-color: var(--paloRosa-letra);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.section-somos{
+    display: flex;
+}
+.section-somos> p{
+    width: 50vw;
+}
+#logo-sectionSomos { width: 500px; }
+
