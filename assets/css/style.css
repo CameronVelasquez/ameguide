@@ -126,17 +126,38 @@ main{
 }
 
 .main-sections{
-    padding: 7rem;
+    padding: 5rem;
     background-color: var(--paloRosa-letra);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
-.section-somos{
-    display: flex;
+.main-sections> h2 {
+    width: 70vw;
 }
-.section-somos> p{
-    width: 50vw;
+.section-A{
+    background-image: url(../img/section\ test\ B.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-B{
+    background-image: url(../img/sections\ test.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--paloRosa-letra);
+}
+.section-somos{
+    width: 70vw;
+    gap: 5rem;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+.section-somos>p {
+    width: 40vw;
 }
 #logo-sectionSomos { width: 500px; }
 
