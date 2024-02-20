@@ -140,3 +140,9 @@ main{
 }
 #logo-sectionSomos { width: 500px; }
 
+.carousel-indicators [data-bs-target]{
+    background-clip: inherit !important;
+    border-radius: 50%;
+    width: 18px !important;
+    height: 0px !important;
+}
