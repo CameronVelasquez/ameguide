@@ -160,7 +160,7 @@ main{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: var(--verdeMedio-bg);
-  }
+}
 .section-B{
     background-image: url(../img/sections\ test.png);
     background-position: right;
@@ -169,7 +169,7 @@ main{
     color: var(--paloRosa-letra);
 }
 .section-C{
-    background-image: url(../img/proximamente\ test.png);
+    /* background-image : url(../img/proximamente\ test.png); */
     height: 60vh;
     background-position: right;
     background-size: cover;
@@ -222,4 +222,147 @@ iframe{
     border-radius: 50%;
     width: 18px !important;
     height: 0px !important;
+}
+
+/* Alianzas */
+.accordion {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion-select {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-title {
+    position: relative;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border: 1px solid transparent;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accordion-title span {
+    bottom: 0px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.accordion-content {
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Generated styles starts here */ 
+
+.accordion {
+    border-color: #dedede;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: column;
+    height: auto;
+} 
+
+.accordion-title h2,
+.accordion-select  {
+    /* background-color: #ffffff; */
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px); Adjust the blur value as desired */
+    /* color: #7f8787; */
+    width: 100%;
+    height: 65px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.accordion-select {
+    /* background-color: #ffffff; */
+    
+    margin-bottom: -65px;
+    margin-right: 0;
+}
+.accordion-title {
+    /* background-color: #ffffff; */
+    
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border-bottom-color: rgb(234, 234, 234);
+    border-right-color: transparent;
+} 
+
+.accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    background-color: #ffffff;
+} 
+
+.accordion-title h2  {	
+    transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    padding-left: 33px;
+    padding-right: 33px;
+    line-height: 100px;
+    height: 100px;
+} 
+
+.accordion-content {
+    background-color: #f7f7f7;
+    background-size: 100%;    
+    color: white;
+    /* color: #7f8787; */
+    height: 280px;
+    margin-bottom: -280px;
+    margin-right: 0;
+    padding: 30px;
+    width: 100%;
+} 
+
+.contentA,
+.contentB,
+.contentC,
+.contentD,
+.contentE {
+    background-size: 100%;
+}
+
+.contentA {
+    background-image: url(../img/alianza1.jpg);
+}
+.contentB {
+    background-image: url(../img/alianza2.jpg);
+}
+.contentC {
+    background-image: url(../img/alianza3.jpg);
+}
+.contentD {
+    background-image: url(../img/alianza4.jpg);
+}
+.contentE {
+    background-image: url(../img/alianza5.jpg);
 }
