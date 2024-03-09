@@ -18,7 +18,7 @@
 /* h1,h2 */
 .principal{
     font-family: "Open Sans Hebrew Extra Bold";
-    font-size: 33px;
+    font-size: 35px;
     line-height: 19px;
     letter-spacing: 1.2px;
     word-spacing: 7px; 
@@ -144,7 +144,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .main-sections> h2 {
     width: 70vw;
@@ -160,7 +160,7 @@ main{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: var(--verdeMedio-bg);
-  }
+}
 .section-B{
     background-image: url(../img/sections\ test.png);
     background-position: right;
@@ -175,6 +175,21 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--paloRosa-letra);
+}
+.section-D{
+    text-align: center;
+    padding: 0;
+}
+.section-D h2 {
+    font-size: 45px;
+    word-spacing: 20px;
+    background-color: var(--paloRosa-letra);
+    background-color: #e14242;
+    height: 20vh;
+    width: 100%;
+    padding: 5rem;
+    
+    
 }
 .section-somos{
     width: 70vw;
@@ -223,3 +238,6 @@ iframe{
     width: 18px !important;
     height: 0px !important;
 }
+
+/* Alianzas */
+
